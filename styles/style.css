@@ -5,8 +5,9 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 /*Вся шапка*/
+
+
 .header {
   position: relative;
   display: flex;
@@ -14,9 +15,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
 }
-
 
 /* Лого яндекс практикум*/
 .logo_place_header {
@@ -28,9 +28,8 @@
   z-index: 2;
 }
 
-
 /*Заголовок Научиться учиться*/
-.header__title {  
+.header__title {
   align-self: center;
   position: relative;
   width: 730px;
@@ -40,7 +39,6 @@
   font-weight: 600;
   z-index: 4;
 }
-
 
 /*какие современные и тд*/
 .header__subtitle {
@@ -54,7 +52,6 @@
   z-index: 3;
 }
 
-
 /*Опять двойка*/
 .header__main-illustration {
   position: absolute;
@@ -64,7 +61,6 @@
   height: 608px;
   z-index: 1;
 }
-
 
 /*Квадрат*/
 .header__square-pic {
@@ -77,19 +73,14 @@
   z-index: 0;
 }
 
-
-
-
-
-
 /*СЕКЦИЯ DESCRIPTION*/
+
 
 .description {
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
-
 
 .two-columns {
   display: flex;
@@ -99,7 +90,6 @@
   margin: auto;
   width: 80%;
 }
-
 
 .two-columns__first-description {
   display: flex;
@@ -132,18 +122,14 @@
   font-size: 24px;
 }
 
-
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
 
-
-
-
-
 /*СЕКЦИЯ DIGITS*/
+
 
 .digits {
   display: flex;
@@ -153,7 +139,6 @@
 }
 
 /*Цифры и факты*/
-
 .section-title {
   display: flex;
   justify-content: center;
@@ -165,9 +150,7 @@
   font-weight: 600;
 }
 
-
 /*Про учёбу и мозг*/
-
 .section-subtitle {
   display: flex;
   justify-content: center;
@@ -178,10 +161,8 @@
   font-weight: normal;
 }
 
-
 /*табличка*/
-
-.table {  
+.table {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -189,7 +170,6 @@
   margin-bottom: 100px;
   width: 1100px;
 }
-
 
 .table__cell {
   width: 250px;
@@ -203,16 +183,15 @@
   margin-bottom: 20px;
 }
 
-.table__text{
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
 }
 
-
-
 /*ФЕЙНМАН*/
+
 
 .feynman {
   position: relative;
@@ -225,9 +204,8 @@
   background-repeat: no-repeat;
   height: 890px;
   margin-top: 100px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
 }
-
 
 /*Метод фейнмана*/
 .feynman__title {
@@ -237,7 +215,6 @@
   font-size: 120px;
   font-weight: 600;
 }
-
 
 /*Выучить и не забыть*/
 .feynman__subtitle {
@@ -258,10 +235,8 @@
   font-weight: normal;
 }
 
-
-
-
 /*КАУФМАН*/
+
 
 .kaufman {
   display: flex;
@@ -270,7 +245,6 @@
   overflow: hidden;
   background-color: #1f1f1f;
 }
-
 
 /*Принципы*/
 .section__title_theme_dark {
@@ -284,7 +258,6 @@
   color: aliceblue;
 }
 
-
 /*от Джоша Кауфмана*/
 .section__subtitle_theme_dark {
   width: 60%;
@@ -296,7 +269,6 @@
   color: aliceblue;
 }
 
-
 /*таблица*/
 .table__theme_dark {
   justify-content: space-between;
@@ -305,7 +277,6 @@
 
   z-index: 1;
 }
-
 
 /*клетки*/
 .table__cell_theme_dark {
@@ -328,12 +299,11 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}  
-
+}
 
 .kaufman__triangle {
   position: absolute;
-  background-image: url("/images/kaufman-triangle.svg");
+  background-image: url("./images/kaufman-triangle.svg");
   background-size: 877px 877px;
   width: 877px;
   height: 877px;
@@ -342,18 +312,14 @@
   z-index: 0;
 }
 
-
-
-
-
 /*FOOTER*/
+
 
 .footer {
   display: flex;
   min-height: 350px;
   background-color: #1f1f1f;
 }
-
 
 /*таблица*/
 .footer__columns {
@@ -362,8 +328,6 @@
   width: 90%;
   margin: 60px auto 40px auto;
 }
-
-
 
 /*1 столбец*/
 .footer__columns_content_copyright {
@@ -374,13 +338,11 @@
 
 }
 
-
 /*Яндекс практикум*/
 .logo_place_footer {
   width: 228px;
   height: 32px;
 }
-
 
 /*Павел Альтапов*/
 .footer__author {
@@ -393,10 +355,6 @@
 
 }
 
-
-
-
-
 /*о практикуме / соцсети*/
 .footer__column-heading {
   margin-bottom: 20px;
@@ -406,7 +364,6 @@
   font-weight: 600;
 
 }
-
 
 /*названия ссылок*/
 .footer__column-links {
@@ -420,13 +377,10 @@
   font-weight: normal;
 }
 
-
 /*Youtube\VKontakte\TikTok*/
 .footer__column-link {
   color: aliceblue;
 }
-
-
 
 /*иконки приложений*/
 .footer__social_icon {
