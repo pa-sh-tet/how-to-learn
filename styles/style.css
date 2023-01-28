@@ -1,3 +1,10 @@
+h1, h2, h3, h4, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -5,10 +12,12 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*Вся шапка*/
+
+/*header*/
 
 
 .header {
+  overflow: hidden;
   position: relative;
   display: flex;
   margin: auto;
@@ -18,7 +27,6 @@
   background-color: #f2f2f2;
 }
 
-/* Лого яндекс практикум*/
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -28,32 +36,30 @@
   z-index: 2;
 }
 
-/*Заголовок Научиться учиться*/
 .header__title {
   align-self: center;
   position: relative;
-  width: 730px;
-  left: 64px;
+  max-width: 730px;
+  margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
   z-index: 4;
 }
 
-/*какие современные и тд*/
 .header__subtitle {
   position: absolute;
   font-weight: normal;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   z-index: 3;
 }
 
-/*Опять двойка*/
 .header__main-illustration {
+  object-fit: contain;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -62,7 +68,6 @@
   z-index: 1;
 }
 
-/*Квадрат*/
 .header__square-pic {
   position: absolute;
   height: 568px;
@@ -73,7 +78,13 @@
   z-index: 0;
 }
 
-/*СЕКЦИЯ DESCRIPTION*/
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+
+/*description*/
 
 
 .description {
@@ -91,35 +102,27 @@
   width: 80%;
 }
 
-.two-columns__first-description {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 175px;
-
-}
-
 .two-columns__brief {
-  min-width: 175px;
+  width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-
 }
 
-.two-columns__second-description {
+.two-columns__main-text {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   width: 80%;
   min-width: 784px;
   font-weight: normal;
-}
-
-.two-columns__main-text {
   line-height: 34px;
   font-size: 24px;
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -128,7 +131,8 @@
   font-weight: 600;
 }
 
-/*СЕКЦИЯ DIGITS*/
+
+/*digits*/
 
 
 .digits {
@@ -138,8 +142,8 @@
   margin-top: 100px;
 }
 
-/*Цифры и факты*/
 .section-title {
+  text-align: center;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -150,8 +154,8 @@
   font-weight: 600;
 }
 
-/*Про учёбу и мозг*/
 .section-subtitle {
+  text-align: center;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -161,7 +165,6 @@
   font-weight: normal;
 }
 
-/*табличка*/
 .table {
   display: flex;
   flex-flow: row wrap;
@@ -188,9 +191,11 @@
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
+  margin-top: auto;
 }
 
-/*ФЕЙНМАН*/
+
+/*feynman*/
 
 
 .feynman {
@@ -202,21 +207,19 @@
   background-position: left bottom;
   background-size: 867px 637px;
   background-repeat: no-repeat;
-  height: 890px;
+  min-height: 890px;
   margin-top: 100px;
   background-color: #f2f2f2;
 }
 
-/*Метод фейнмана*/
 .feynman__title {
   text-align: center;
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
 }
 
-/*Выучить и не забыть*/
 .feynman__subtitle {
   margin-top: 70px;
   line-height: 51px;
@@ -225,7 +228,6 @@
   text-align: center;
 }
 
-/*Ссылка*/
 .feynman__link {
   position: absolute;
   top: 50%;
@@ -235,7 +237,8 @@
   font-weight: normal;
 }
 
-/*КАУФМАН*/
+
+/*kaufman*/
 
 
 .kaufman {
@@ -246,8 +249,7 @@
   background-color: #1f1f1f;
 }
 
-/*Принципы*/
-.section__title_theme_dark {
+.section-title_theme_dark {
   margin-top: 90px;
   margin-bottom: 20px;
   width: 60%;
@@ -255,29 +257,26 @@
   font-size: 60px;
   font-weight: 600;
   z-index: 1;
-  color: aliceblue;
+  color: white;
 }
 
-/*от Джоша Кауфмана*/
-.section__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   width: 60%;
   margin-bottom: 0px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   z-index: 1;
-  color: aliceblue;
+  color: white;
 }
 
-/*таблица*/
-.table__theme_dark {
+.table_theme_dark {
   justify-content: space-between;
   margin: auto;
   margin-bottom: 90px;
   z-index: 1;
 }
 
-/*клетки*/
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -311,7 +310,8 @@
   z-index: 0;
 }
 
-/*FOOTER*/
+
+/*footer*/
 
 
 .footer {
@@ -320,7 +320,6 @@
   background-color: #1f1f1f;
 }
 
-/*таблица*/
 .footer__columns {
   display: flex;
   justify-content: space-between;
@@ -328,61 +327,56 @@
   margin: 60px auto 40px auto;
 }
 
-/*1 столбец*/
-.footer__columns_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 711px;
-
 }
 
-/*Яндекс практикум*/
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
 .logo_place_footer {
   width: 228px;
   height: 32px;
 }
 
-/*Павел Альтапов*/
 .footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  color: aliceblue;
-
+  color: white;
 }
 
-/*о практикуме / соцсети*/
 .footer__column-heading {
   margin-bottom: 20px;
-  color: aliceblue;
+  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-
+  margin-top: 0;
 }
 
-/*названия ссылок*/
 .footer__column-links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 16px;
-  color: aliceblue;
+  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-/*Youtube\VKontakte\TikTok*/
 .footer__column-link {
-  color: aliceblue;
+  color: white;
+  text-decoration: none;
 }
 
-/*иконки приложений*/
-.footer__social_icon {
+.footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
