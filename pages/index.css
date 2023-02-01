@@ -19,3 +19,12 @@
 @import url("../blocks/kaufman/kaufman.css");
 @import url("../blocks/logo/logo.css");
 @import url("../blocks/rotation/rotation.css");
+@import url("./__title/cards__title.css");
+@import url("./__title/feynman__title.css");
+@import url("./_content/footer__column_content_copyright.css");
+@import url("./__columns/footer__columns.css");
+@import url("./__title/header__title.css");
+@import url("./__triangle/kaufman__triangle.css");
+@import url("./__title/khan__title.css");
+@import url("./_place/logo_place_header.css");
+@import url("./__logo/resources__logo.css");
