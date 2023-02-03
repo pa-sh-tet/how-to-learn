@@ -1,4 +1,8 @@
-@keyframes rotation-square {
+.rotation {
+  animation: rotation linear infinite 20s;
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -7,11 +11,3 @@
   }
 }
 
-@keyframes rotation-triangle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
